@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Evolution Lab 2026</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            Web Evolution Lab
+            <span class="logo-tag">2026</span>
+        </div>
+
+        <button id="themeBtn">
+            🌙 Mode sombre
+        </button>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-badge">// veille technologique — trois API natives testées en direct</div>
+
+        <h1>
+            Ce que le navigateur sait faire tout seul
+        </h1>
+
+        <p>
+            Trois interfaces, trois API du plateforme web natif — sans librairie, sans framework. Interagis avec chaque
+            démo pour voir le code du navigateur au travail.
+        </p>
+
+        <div class="hero-tech">
+            <span class="tech-chip"><i class="dot dot-cyan"></i>HTML <code>popover</code></span>
+            <span class="tech-chip"><i class="dot dot-amber"></i>CSS <code>anchor()</code></span>
+            <span class="tech-chip"><i class="dot dot-cyan"></i>JS <code>startViewTransition()</code></span>
+        </div>
+
+    </section>
+
+
+    <main class="cards">
+
+        <!-- POP OVER -->
+
+        <article class="card">
+
+            <div class="card-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <code class="card-sig">[popover]</code>
+                <span class="badge badge-cyan">Baseline</span>
+            </div>
+
+            <h2>HTML Popover</h2>
+
+            <p>
+                Une fenêtre superposée gérée nativement par le navigateur — sans z-index, sans JavaScript pour l'ouvrir
+                ou la fermer.
+            </p>
+
+            <button class="btn" popovertarget="popover-demo">
+
+                Tester
+
+            </button>
+
+
+            <div id="popover-demo" popover>
+
+                <span class="popover-kicker">// top layer</span>
+
+                <h3>Bonjour Elijah 👋</h3>
+
+                <p>
+
+                    Cette popup utilise uniquement l'attribut HTML <code>popover</code>.
+
+                </p>
+
+                <button class="btn" popovertarget="popover-demo">
+
+                    Fermer
+
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- Anchor -->
+
+        <article class="card">
+
+            <div class="card-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <code class="card-sig">position-anchor</code>
+                <span class="badge badge-amber">Émergent</span>
+            </div>
+
+            <h2>CSS Anchor Positioning</h2>
+
+            <p>
+                Le menu ci-dessous est ancré au bouton en CSS pur, via <code>anchor-name</code> — plus besoin de
+                calculer une position en JavaScript.
+            </p>
+
+            <button id="profileButton" class="btn">
+
+                👤 Profil
+
+            </button>
+
+
+            <div id="profileMenu">
+
+                <span class="menu-kicker">// anchor(bottom)</span>
+
+                <ul>
+
+                    <li>Mon compte</li>
+
+                    <li>Paramètres</li>
+
+                    <li>Déconnexion</li>
+
+                </ul>
+
+            </div>
+
+        </article>
+
+        <!-- View Transition -->
+
+        <article class="card">
+
+            <div class="card-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <code class="card-sig">startViewTransition()</code>
+                <span class="badge badge-cyan">Baseline</span>
+            </div>
+
+            <h2>View Transition API</h2>
+
+            <p>
+                Une transition fluide entre deux états du DOM, animée nativement par le navigateur en une seule ligne de
+                JavaScript.
+            </p>
+
+            <div id="transitionCard">
+
+                <h3>
+
+                    Développement Web
+
+                </h3>
+
+                <p>
+
+                    HTML • CSS • JavaScript
+
+                </p>
+
+            </div>
+
+            <button id="transitionBtn" class="btn">
+
+                Changer la carte
+
+            </button>
+
+        </article>
+
+    </main>
+
+    <section class="learn">
+
+        <div class="section-heading">
+            <p class="eyebrow">// notes de veille</p>
+            <h2>Ce que j'ai appris</h2>
+        </div>
+
+        <div class="learn-grid">
+
+            <div>
+
+                <span class="learn-tag">HTML</span>
+
+                <h3>Popover</h3>
+
+                <p>
+                    Le navigateur gère désormais les popups nativement : couche d'affichage dédiée, fermeture au clic
+                    extérieur et accessibilité intégrées gratuitement.
+                </p>
+
+            </div>
+
+            <div>
+
+                <span class="learn-tag">CSS</span>
+
+                <h3>Anchor Positioning</h3>
+
+                <p>
+                    Positionner un élément par rapport à un autre ne demande plus de calculs JavaScript : le navigateur
+                    ancre lui-même les coordonnées.
+                </p>
+
+            </div>
+
+            <div>
+
+                <span class="learn-tag">JavaScript</span>
+
+                <h3>View Transitions</h3>
+
+                <p>
+                    Une API minimale qui rend les changements d'état d'une interface aussi fluides qu'une animation
+                    soignée — sans librairie d'animation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <code>// développé par Elijah Ismael Diallo — veille technologique 2026</code>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
