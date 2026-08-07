@@ -1,9 +1,9 @@
-# 🚀 Veille Technologique 2026
+# ⃗️ Veille Technologique 2026
 # Les nouvelles fonctionnalités du Web moderne
 
-## 📌 Introduction
+## ⌘ Introduction
 
-Le développement web évolue rapidement grâce à l'arrivée de nouvelles API et fonctionnalités natives directement intégrées aux navigateurs. Ces nouveautés permettent aux développeurs de créer des interfaces plus modernes, plus performantes et plus accessibles, tout en réduisant considérablement la quantité de JavaScript nécessaire.
+Le développement web évolue rapidemment grâce à l'arrivée de nouvelles API et fonctionnalités natives directement intégrées aux navigateurs. Ces nouveautés permettent aux développeurs de créer des interfaces plus modernes, plus performantes et plus accessibles, tout en réduisant considérablement la quantité de JavaScript nécessaire.
 
 Cette veille technologique présente quatre innovations majeures du Web moderne :
 
@@ -13,12 +13,10 @@ Cette veille technologique présente quatre innovations majeures du Web moderne 
 - Mode Clair / Mode Sombre
 
 ---
-
 # 1. Popover API (HTML natif)
-
 ## Définition
 
-La **Popover API** est une nouvelle fonctionnalité HTML qui permet de créer des fenêtres flottantes (popup, menu, panneau, aide contextuelle...) sans écrire de JavaScript complexe.
+La **Popover API** est une nouvelle fonctionnalité HTML qui permet de créer des fenîtres flottantes (popup, menu, panneau, aide contextuelle...) sans écrire de JavaScript complexe.
 
 Le navigateur prend directement en charge :
 
@@ -32,17 +30,16 @@ Le navigateur prend directement en charge :
 Autrement dit, ce qui nécessitait auparavant plusieurs dizaines de lignes de JavaScript est désormais intégré au navigateur.
 
 ---
-
 ## Avant la Popover API
 
 Avant cette fonctionnalité, il fallait :
 
-- créer une fenêtre cachée
+- créer une fenître cachée
 - modifier le CSS avec JavaScript
 - gérer l'ouverture
 - gérer la fermeture
 - fermer au clic extérieur
-- gérer les événements clavier
+- gérer les évènements clavier
 
 Exemple :
 
@@ -52,10 +49,9 @@ button.onclick = () => {
 };
 ```
 
-Puis plusieurs fonctions supplémentaires étaient nécessaires pour gérer le comportement de la fenêtre.
+Puis plusieurs fonctions supplémentaires étaient nécessaires pour gérer le comportement de la fenître.
 
 ---
-
 ## Aujourd'hui
 
 Grâce au HTML natif :
@@ -73,9 +69,7 @@ Grâce au HTML natif :
 Aucun JavaScript n'est nécessaire.
 
 ---
-
 ## Les attributs importants
-
 ### `popover`
 
 Transforme un élément HTML en popover.
@@ -85,7 +79,6 @@ Transforme un élément HTML en popover.
 ```
 
 ---
-
 ### `popovertarget`
 
 Indique quel élément ouvrir.
@@ -95,7 +88,6 @@ Indique quel élément ouvrir.
 ```
 
 ---
-
 ### `popovertargetaction`
 
 Détermine l'action du bouton.
@@ -115,18 +107,16 @@ popovertargetaction="toggle">
 ```
 
 ---
-
 ## Cas d'utilisation
 
 - Menu utilisateur
 - Notifications
 - Menu déroulant
-- Fenêtre d'aide
+- Fenître d'aide
 - Paramètres
 - Informations contextuelles
 
 ---
-
 ## Avantages
 
 ✅ Très léger
@@ -140,9 +130,7 @@ popovertargetaction="toggle">
 ✅ Fonctionnalité native
 
 ---
-
 # 2. CSS Anchor Positioning
-
 ## Définition
 
 CSS Anchor Positioning est une nouvelle fonctionnalité CSS permettant de positionner automatiquement un élément par rapport à un autre sans effectuer de calculs JavaScript.
@@ -156,7 +144,6 @@ Elle est particulièrement utile pour :
 - calendriers
 
 ---
-
 ## Le problème auparavant
 
 Lorsqu'on voulait afficher un menu sous un bouton, il fallait calculer sa position.
@@ -177,7 +164,6 @@ Ce calcul devait être refait :
 - lorsque le bouton changeait de place
 
 ---
-
 ## Aujourd'hui
 
 Le bouton devient une ancre.
@@ -202,7 +188,6 @@ Puis le menu s'y rattache.
 Le navigateur réalise automatiquement tous les calculs.
 
 ---
-
 ## Exemple complet
 
 ```html
@@ -231,10 +216,9 @@ Mon compte
 }
 ```
 
-Le menu suivra automatiquement le bouton.
+Le menu suit automatiquement le bouton.
 
 ---
-
 ## Avantages
 
 ✅ Responsive
@@ -246,19 +230,16 @@ Le menu suivra automatiquement le bouton.
 ✅ Plus performant
 
 ---
-
 ## Cas d'utilisation
 
 - Menus déroulants
 - Tooltip
 - Calendrier
 - Suggestions automatiques
-- Fenêtres contextuelles
+- Fenîtres contextuelles
 
 ---
-
 # 3. View Transition API
-
 ## Définition
 
 La View Transition API permet de créer des animations fluides entre deux états d'une page.
@@ -272,7 +253,6 @@ Elle fonctionne aussi bien pour :
 - mettre à jour une interface
 
 ---
-
 ## Avant
 
 Les changements étaient instantanés.
@@ -288,7 +268,6 @@ Nouvelle page
 L'utilisateur percevait une coupure brutale.
 
 ---
-
 ## Aujourd'hui
 
 Grâce à :
@@ -302,7 +281,6 @@ document.startViewTransition(() => {
 Le navigateur anime automatiquement la transition.
 
 ---
-
 ## Exemple
 
 ```javascript
@@ -316,7 +294,6 @@ document.body.classList.toggle("dark");
 Le changement devient fluide.
 
 ---
-
 ## Fonctionnement
 
 Le navigateur :
@@ -327,7 +304,6 @@ Le navigateur :
 4. crée automatiquement une animation
 
 ---
-
 ## Cas d'utilisation
 
 - Navigation SPA
@@ -338,7 +314,6 @@ Le navigateur :
 - Tableaux
 
 ---
-
 ## Avantages
 
 ✅ Animation native
@@ -352,9 +327,7 @@ Le navigateur :
 ✅ Performances élevées
 
 ---
-
 # 4. Mode Clair / Mode Sombre
-
 ## Définition
 
 Le Dark Mode consiste à proposer deux thèmes :
@@ -365,7 +338,6 @@ Le Dark Mode consiste à proposer deux thèmes :
 L'utilisateur peut choisir celui qu'il préfère.
 
 ---
-
 ## Pourquoi utiliser un Dark Mode ?
 
 Le mode sombre :
@@ -376,7 +348,6 @@ Le mode sombre :
 - améliore l'expérience utilisateur
 
 ---
-
 ## Exemple CSS
 
 ```css
@@ -398,7 +369,6 @@ color:white;
 ```
 
 ---
-
 ## Exemple JavaScript
 
 ```javascript
@@ -410,7 +380,6 @@ document.body.classList.toggle("dark");
 ```
 
 ---
-
 ## Détection automatique
 
 Le navigateur peut détecter le thème du système.
@@ -432,7 +401,6 @@ color:white;
 Le site adopte automatiquement le thème préféré de l'utilisateur.
 
 ---
-
 ## Variables CSS
 
 Bonne pratique :
@@ -464,7 +432,6 @@ color:var(--text);
 Cette méthode facilite la maintenance.
 
 ---
-
 ## Avantages
 
 ✅ Plus confortable
@@ -476,7 +443,6 @@ Cette méthode facilite la maintenance.
 ✅ Personnalisable
 
 ---
-
 # Comment ces technologies fonctionnent ensemble ?
 
 Prenons un exemple concret.
@@ -484,7 +450,7 @@ Prenons un exemple concret.
 Un utilisateur ouvre un tableau de bord.
 
 1. Il clique sur son avatar.
-2. Un Popover natif apparaît.
+2. Un Popover natif apparaét.
 3. Grâce à CSS Anchor Positioning, le menu reste toujours parfaitement aligné sous le bouton.
 4. L'utilisateur active le mode sombre.
 5. La View Transition API anime la transition entre les deux thèmes.
@@ -497,7 +463,6 @@ Résultat :
 - meilleures performances
 
 ---
-
 # Pourquoi ces nouveautés sont importantes ?
 
 Ces technologies représentent une évolution majeure du Web.
@@ -511,7 +476,6 @@ Elles permettent :
 - d'utiliser davantage de fonctionnalités directement intégrées aux navigateurs
 
 ---
-
 # Conclusion
 
 Le Web moderne évolue vers des fonctionnalités natives de plus en plus puissantes. Des tâches autrefois réalisées avec de nombreuses bibliothèques JavaScript peuvent désormais être effectuées directement grâce aux API intégrées aux navigateurs.
@@ -520,10 +484,11 @@ Les quatre technologies présentées — **Popover API**, **CSS Anchor Positioni
 
 En les adoptant, les développeurs créent des applications :
 
-- plus rapides ⚡
+- plus rapides 🔌
 - plus accessibles ♿
-- plus élégantes 🎨
-- plus faciles à maintenir 🛠️
+- plus élégantes 💎
+- plus faciles à maintenir 🔫
 - offrant une excellente expérience utilisateur 🚀
 
 Ces innovations représentent une étape importante dans l'évolution du développement Front-End moderne.
+testé par Kira
